@@ -3,7 +3,7 @@ describe("the game", function(){
     player.x = 0;
     player.y = 0;
   });
-
+// testing all the logic for moving right, left, up and down
   describe("moveRight", function(){
     it("should add 1 to player.x", function(){
       moveRight();
@@ -31,7 +31,7 @@ describe("the game", function(){
       expect(player.y).toEqual(-1);
     });
   });
-
+  // testing if the player won function
   describe("player won", function(){
     it("should check if the player has won", function(){
       renderWin();
@@ -43,7 +43,7 @@ describe("the game", function(){
 
       expect(window.renderWin).toHaveBeenCalled();
       expect(window.renderWin).toHaveBeenCalled();
-      expect(window.renderWin.calls.count().toBeGreaterThan(0))
+      expect(window.renderWin.calls.count().toBeGreaterThan(0));
     });
   });
 });
